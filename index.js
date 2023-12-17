@@ -9,7 +9,7 @@ function search(){
       let apikey = '7f4ccb39'
       let input = document.getElementById('input')
       let search = input.value
-      let res = await fetch(`http://www.omdbapi.com/?s=${search}&apikey=${apikey}`)
+      let res = await fetch(`https://www.omdbapi.com/?s=${search}&apikey=${apikey}`)
       let data = (await res.json()).Search
       // console.log(data)
       getData(data)
